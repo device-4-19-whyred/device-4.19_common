@@ -411,6 +411,7 @@ PRODUCT_PACKAGES += \
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
+    ipacm.rc \
     IPACM_cfg.xml
 
 # Trust
