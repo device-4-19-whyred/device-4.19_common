@@ -453,6 +453,9 @@ on property:persist.vendor.ssr.enable_ramdumps=0
 #on property:persist.vendor.sys.rawdump_copy=0
 #    write /sys/kernel/dload/emmc_dload 0
 
+    # Thermal Profile
+    write /sys/class/thermal/thermal_message/sconfig 0
+
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
     #Enable UFS clock scaling back
