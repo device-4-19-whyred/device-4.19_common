@@ -36,6 +36,9 @@ ro.iorapd.enable=true
 # OEM Unlock reporting
 ro.oem_unlock_supported=1
 
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
+
 # SELinux
 ro.build.selinux=1
 
