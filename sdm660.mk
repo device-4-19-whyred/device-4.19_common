@@ -465,3 +465,7 @@ PRODUCT_PACKAGES += \
     GCamGo \
     GalleryGo \
     Gboard
+
+# SimpleDeviceConfigOverlay
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfigOverlay
