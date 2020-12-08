@@ -450,4 +450,5 @@ USE_DEVICE_SPECIFIC_IPACFG_MGR := true
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    GCamGo
+    GCamGo \
+    GalleryGo
