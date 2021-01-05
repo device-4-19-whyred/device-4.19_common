@@ -431,3 +431,7 @@ PRODUCT_BOOT_JARS += \
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
 $(call inherit-product, vendor/xiaomi/dirac/dirac.mk)
+
+# IPA
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
+USE_DEVICE_SPECIFIC_IPACFG_MGR := true
