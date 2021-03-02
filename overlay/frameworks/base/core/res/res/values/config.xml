@@ -299,4 +299,7 @@
 
     <!-- If this is true, device supports Sustained Performance Mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
+
+    <!-- Vowifi -->
+    <bool name="config_hasVowifi">true</bool>
 </resources>
