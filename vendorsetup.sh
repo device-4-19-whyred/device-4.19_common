@@ -5,10 +5,6 @@ export SKIP_ABI_CHECKS=true
 rm -rf vendor/codeaurora/telephony
 rm -rf vendor/qcom/opensource/data-ipa-cfg-mgr
 rm -rf vendor/qcom/opensource/power
-rm -rf frameworks/base/packages/overlays/NavigationBarModeGesturalOverlay
-rm -rf frameworks/base/packages/overlays/NavigationBarModeGesturalOverlayWideBack
-rm -rf frameworks/base/packages/overlays/NavigationBarModeGesturalOverlayNarrowBack
-rm -rf frameworks/base/packages/overlays/NavigationBarModeGesturalOverlayExtraWideBack
 
 # clone
 git clone https://bitbucket.org/syberia-project/external_motorola_faceunlock.git -b 11.0 external/motorola/faceunlock
