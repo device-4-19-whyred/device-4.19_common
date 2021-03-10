@@ -30,6 +30,9 @@ ro.com.google.ime.system_lm_dir=/product/usr/share/ime/google/d3_lms
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
+# IORAP
+ro.iorapd.enable=true
+
 # OEM Unlock reporting
 ro.oem_unlock_supported=1
 
