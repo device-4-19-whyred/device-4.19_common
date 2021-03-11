@@ -3,7 +3,6 @@ export SKIP_ABI_CHECKS=true
 
 # rm -rf
 rm -rf vendor/codeaurora/telephony
-rm -rf vendor/qcom/opensource/data-ipa-cfg-mgr
 rm -rf vendor/qcom/opensource/power
 
 # clone
