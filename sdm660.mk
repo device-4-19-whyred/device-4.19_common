@@ -471,3 +471,7 @@ PRODUCT_PACKAGES += \
 # SimpleDeviceConfigOverlay
 PRODUCT_PACKAGES += \
     SimpleDeviceConfigOverlay
+
+# iorap
+PRODUCT_PACKAGES += \
+    iorap-app-startup-runner
