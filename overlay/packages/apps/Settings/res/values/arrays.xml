@@ -27,4 +27,11 @@
         <item>-1</item>
     </integer-array>
 
+    <!--  Legion About Phone  -->
+
+    <string name="legion_device_name_summary">Redmi Note 7</string>
+    <string name="legion_chipset_type_summary">SDM660</string>
+    <string name="legion_gpu_summary">Adreno512</string>
+    <string name="legion_camera_mp_summary">48+5+13</string>
+    <string name="legion_screen_type_summary">IPS 6.3</string>
 </resources>
