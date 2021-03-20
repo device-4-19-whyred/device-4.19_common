@@ -474,3 +474,13 @@ PRODUCT_PACKAGES += \
 # iorap
 PRODUCT_PACKAGES += \
     iorap-app-startup-runner
+
+# XiaomiParts
+$(call inherit-product-if-exists, vendor/xiaomi/XiaomiParts/xiaomiparts.mk)
+
+PRODUCT_PACKAGES += \
+  init.xiaomiparts.rc \
+  init.parallax.rc \
+  init.parallax.sh \
+  init.blur.rc \
+  init.blur.sh
