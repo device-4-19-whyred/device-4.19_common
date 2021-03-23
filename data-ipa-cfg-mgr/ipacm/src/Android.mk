@@ -46,31 +46,19 @@ include $(CLEAR_VARS)
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../src
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../inc
 
-LOCAL_HEADER_LIBRARIES := generated_kernel_headers
+LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
+LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
-LOCAL_CFLAGS := -DFEATURE_IPA_ANDROID
+LOCAL_CFLAGS := -v
+LOCAL_CFLAGS += -DFEATURE_IPA_ANDROID
 LOCAL_CFLAGS += -DFEATURE_IPACM_RESTART
 
 ifeq ($(call is-board-platform-in-list,$(BOARD_ETH_BRIDGE_LIST)),true)
 LOCAL_CFLAGS += -DFEATURE_ETH_BRIDGE_LE
 endif
 
-LOCAL_CFLAGS += -DFEATURE_IPACM_HAL
-LOCAL_CFLAGS += \
-        -Wall \
-        -Werror \
-        -Wno-constant-logical-operand \
-        -Wno-format \
-        -Wno-missing-field-initializers \
-        -Wno-sign-compare \
-        -Wno-sometimes-uninitialized \
-        -Wno-unused-parameter \
-        -Wno-unused-value \
-        -Wno-unused-variable \
-        -Wno-writable-strings \
-        -Wno-error=implicit-fallthrough
-
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
+LOCAL_CFLAGS += -DFEATURE_IPACM_HAL -Wall -Werror -Wno-error=macro-redefined
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 LOCAL_CFLAGS += -DDEBUG
 endif
 
