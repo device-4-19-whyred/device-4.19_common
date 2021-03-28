@@ -21,6 +21,9 @@
 # definition file).
 #
 
+# Live Blur
+TARGET_DISABLE_BLUR := true
+
 # Inherit properties ($PATH_PROP)
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop

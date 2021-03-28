@@ -169,3 +169,7 @@
 
     # Time
     persist.vendor.delta_time.enable=true
+
+    # Blur
+    debug.sf.latch_unsignaled=1
+    debug.sf.disable_backpressure=1
