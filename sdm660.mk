@@ -173,7 +173,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+#    Snap
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.4:64 \
@@ -470,7 +470,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/dirac/dirac.mk)
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    GCamGo \
+#    GCamGo \
     GalleryGo \
     Gboard
 
