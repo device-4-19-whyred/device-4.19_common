@@ -483,7 +483,7 @@ PRODUCT_PACKAGES += \
     iorap-app-startup-runner
 
 # XiaomiParts
-$(call inherit-product-if-exists, vendor/xiaomi/XiaomiParts/xiaomiparts.mk)
+$(call inherit-product-if-exists, vendor/XiaomiParts/xiaomiparts.mk)
 
 PRODUCT_PACKAGES += \
   init.xiaomiparts.rc \
