@@ -94,6 +94,9 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Flatten APEXs for performance
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # FM
 ifeq ($(BOARD_HAVE_QCOM_FM),true)
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
