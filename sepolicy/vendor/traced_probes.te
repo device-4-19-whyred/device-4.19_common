@@ -1,0 +1,4 @@
+dontaudit traced_probes debugfs_tracing_debug:file { read open getattr };
+dontaudit traced_probes debugfs_tracing_debug:dir r_dir_perms;
+dontaudit traced_probes debugfs_tracing_debug:file rw_file_perms; 
+

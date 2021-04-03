@@ -1,9 +1,12 @@
+allow system_app default_android_service:service_manager { find };
+
 # Allow theme_prop to be read and set by Settings
 get_prop(system_app, theme_prop)
 set_prop(system_app, theme_prop) 
 
 # Fastcharge
 allow system_app sysfs_fcharge:file { open read getattr write };
+allow system_app sysfs_fcharge:file rwx_file_perms;
 
 # FPS Info
 allow system_app sysfs_fps:file rw_file_perms;
@@ -60,3 +63,7 @@ allow system_app sysfs:file { getattr open read write };
 allow system_app sysfs_egain:file { open read getattr write };
 allow system_app sysfs_hgain:file { open read getattr write };
 allow system_app sysfs_mgain:file { open read getattr write };
+
+# Zram
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file r_file_perms;
