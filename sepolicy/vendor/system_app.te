@@ -1,4 +1,5 @@
 allow system_app default_android_service:service_manager { find };
+allow system_app proc_vmallocinfo:file { open };
 
 # Allow theme_prop to be read and set by Settings
 get_prop(system_app, theme_prop)

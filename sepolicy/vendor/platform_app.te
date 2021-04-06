@@ -1,4 +1,5 @@
 get_prop(platform_app, theme_prop)
+allow platform_app exported_camera_prop:file { read };
 
 # FPS Info
 allow platform_app sysfs_fps:file { getattr open read };
