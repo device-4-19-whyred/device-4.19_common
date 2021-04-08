@@ -499,3 +499,7 @@ PRODUCT_PACKAGES += \
 # Recorder
 PRODUCT_PACKAGES += \
     OPScreenRecorder
+
+# Octavi-OS
+PRODUCT_PACKAGES += \
+    CustomDoze
